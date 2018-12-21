@@ -11,8 +11,15 @@ resource "aws_iam_role_policy" "codebuild_s3" {
         {
             "Effect": "Allow",
             "Action": [
-                "ecr:*",
-                "cloudtrail:LookupEvents"
+                "ecr:GetAuthorizationToken",
+                "ecr:BatchCheckLayerAvailability",
+                "ecr:DescribeRepositories",
+                "ecr:ListImages",
+                "ecr:DescribeImages",
+                "ecr:InitiateLayerUpload",
+                "ecr:UploadLayerPart",
+                "ecr:CompleteLayerUpload",
+                "ecr:PutImage"
             ],
             "Resource": "*"
         },
