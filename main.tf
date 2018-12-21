@@ -91,6 +91,7 @@ resource "aws_s3_bucket" "codebuild_s3" {
   versioning = {
     enabled = true
   }
+
   force_destroy = true
 }
 
