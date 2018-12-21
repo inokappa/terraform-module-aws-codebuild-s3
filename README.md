@@ -8,7 +8,7 @@
 
 ```hcl
 module "codebuild-s3-docker-image-build" {
-  source                                     = ""
+  source                                     = "git::https://github.com/inokappa/terraform-module-aws-codebuild-s3.git"
   codebuild_source_bucket_name               = "codebuild-docker-build-project-sources"
   codebuild_project_service_role_name        = "codebuild-docker-build-project-service-role"
   codebuild_project_service_role_policy_name = "codebuild-docker-build-project-policy"
