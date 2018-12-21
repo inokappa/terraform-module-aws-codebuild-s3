@@ -1,4 +1,4 @@
-# terraform-module-aws-codebuild-s3
+# terraform-module-aws-codebuild-s3 [![CircleCI](https://circleci.com/gh/inokappa/terraform-module-aws-codebuild-s3.svg?style=svg)](https://circleci.com/gh/inokappa/terraform-module-aws-codebuild-s3)
 
 ## About
 
